@@ -1,5 +1,11 @@
-function isPalindrome(word) {
+function isPalindrome(str) {
+  str = str.toLowerCase();
+  return str === str.split('').reverse().join('');
   // Write your algorithm here
+}
+const words = ["abba", "racecar", "a"];
+for(const word of words) {
+  const isPalin = isPalindrome(word);
 }
 
 /* 
